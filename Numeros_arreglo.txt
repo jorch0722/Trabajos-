@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+
+    int numeros[5];
+
+    printf("Inserta 5 numeros:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Numero %d: ", i + 1);
+        scanf("%d", &numeros[i]);
+    }
+
+    printf("\n Los numeros que insertaste son: ");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", numeros[i]);
+    }
+
+    printf("\nEl primer numero es: %d \n", numeros[0]);
+    printf("El ultimo numero es: %d \n", numeros[4]);
+
+    return 0;
+}
